@@ -546,6 +546,80 @@ main { padding-top: var(--header-h); }
 }
 .link-arrow:hover { gap: 11px; }
 
+
+/* ----------------------------- Plataformas marquee -------------------- */
+.plataformas {
+  margin-top: 56px;
+}
+.plataformas-title {
+  text-align: center;
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+  margin: 0 0 28px;
+}
+.plataformas-marquee {
+  overflow: hidden;
+  padding-block: 10px;
+  mask-image: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent);
+}
+.plataformas-track {
+  display: flex;
+  width: max-content;
+  animation: plataformas-scroll 48s linear infinite;
+}
+.plataformas-marquee:hover .plataformas-track,
+.plataformas-marquee:focus-within .plataformas-track {
+  animation-play-state: paused;
+}
+.plataformas-list {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  padding-right: 64px;
+  margin: 0;
+  list-style: none;
+}
+.plataforma {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  outline: none;
+}
+.plataforma img {
+  width: auto;
+  height: auto;
+  max-height: 44px;
+  max-width: 148px;
+  object-fit: contain;
+  filter: grayscale(1) contrast(1.12) brightness(.9);
+  transition: filter .28s var(--ease);
+}
+.plataforma--bn img { max-height: 42px; max-width: 200px; }
+.plataforma--tucan img { max-height: 68px; max-width: 72px; }
+.plataforma--hey img { max-height: 62px; max-width: 80px; }
+.plataforma--puntobp img { max-height: 46px; max-width: 150px; }
+.plataforma--rapibac img { max-height: 30px; max-width: 220px; }
+.plataforma--wu img { max-height: 44px; max-width: 168px; }
+.plataforma--kolbi img { max-height: 42px; max-width: 160px; }
+.plataforma--liberty img { max-height: 32px; max-width: 176px; }
+.plataforma--claro img { max-height: 44px; max-width: 140px; }
+.plataforma--jps img { max-height: 38px; max-width: 190px; }
+.plataforma:hover img,
+.plataforma:focus-visible img,
+.plataforma.is-color img {
+  filter: none;
+}
+
+@keyframes plataformas-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
 /* Catalog coming-soon strip */
 .catalog-strip {
   margin-top: 40px;
@@ -860,6 +934,23 @@ body.menu-open .back-to-top { visibility: hidden; pointer-events: none; }
   .hero-art { width: 230px; right: 0; }
 }
 
+
+@media (max-width: 700px) {
+  .plataformas { margin-top: 40px; }
+  .plataformas-title { margin-bottom: 20px; }
+  .plataformas-list { gap: 40px; padding-right: 40px; }
+  .plataforma { height: 64px; }
+  .plataforma--bn img { max-height: 36px; max-width: 176px; }
+  .plataforma--tucan img { max-height: 60px; max-width: 64px; }
+  .plataforma--hey img { max-height: 54px; max-width: 70px; }
+  .plataforma--puntobp img { max-height: 40px; max-width: 132px; }
+  .plataforma--rapibac img { max-height: 26px; max-width: 190px; }
+  .plataforma--wu img { max-height: 38px; max-width: 148px; }
+  .plataforma--kolbi img { max-height: 36px; max-width: 142px; }
+  .plataforma--liberty img { max-height: 28px; max-width: 156px; }
+  .plataforma--claro img { max-height: 38px; max-width: 124px; }
+  .plataforma--jps img { max-height: 34px; max-width: 168px; }
+}
 /* ----------------------------- Reduced motion -------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -869,4 +960,23 @@ body.menu-open .back-to-top { visibility: hidden; pointer-events: none; }
     transition-duration: .001ms !important;
   }
   .hero-art img { animation: none; }
+
+  .plataformas-track {
+    animation: none !important;
+    transform: none;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+  }
+  .plataformas-list { padding-right: 0; gap: 28px 36px; flex-wrap: wrap; justify-content: center; }
+  .plataformas-list[aria-hidden="true"] { display: none; }
+  .plataformas-marquee {
+    overflow: visible;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+  .plataforma img { filter: grayscale(1) opacity(.75); }
+  .plataforma:hover img,
+  .plataforma:focus-visible img,
+  .plataforma.is-color img { filter: none; }
 }

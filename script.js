@@ -141,4 +141,19 @@
     }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
     sections.forEach(function (s) { observer.observe(s); });
   }
+
+  /* -------------------- Plataformas marquee (mobile tap) ---------------- */
+  document.querySelectorAll("[data-plataformas-marquee]").forEach(function (marquee) {
+    marquee.querySelectorAll(".plataforma").forEach(function (el) {
+      el.addEventListener("pointerup", function (e) {
+        if (e.pointerType !== "touch" && e.pointerType !== "pen") return;
+        var wasOn = el.classList.contains("is-color");
+        marquee.querySelectorAll(".plataforma.is-color").forEach(function (x) {
+          x.classList.remove("is-color");
+        });
+        if (!wasOn) el.classList.add("is-color");
+      });
+    });
+  });
+
 })();
