@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Distribuidora El Dorado · Alimento, accesorios y pagos en Venecia de San Carlos</title>
+  <meta name="description" content="Distribuidora El Dorado en Venecia de San Carlos: alimento y accesorios para su mascota, y también sus pagos del día a día. Pase o escríbanos, con gusto le atendemos." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/jpeg" href="assets/mascota.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Distribuidora El Dorado — inicio">
+        <img class="brand-mark" src="assets/mascota.jpg" alt="Mascota de Distribuidora El Dorado" width="44" height="44" />
+        <span class="brand-name">Distribuidora <strong>El Dorado</strong></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#visita">Visítenos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-ctas">
+        <a class="btn btn-whatsapp" href="https://wa.me/50685660110" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          WhatsApp
+        </a>
+        <a class="btn btn-outline" href="tel:+50624721752">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2a1 1 0 011.05-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.24 1.05l-2.21 2.18z" fill="currentColor"/></svg>
+          Llamar
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-panel">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile slide panel -->
+  <div class="mobile-overlay" id="mobile-overlay" hidden></div>
+  <aside class="mobile-panel" id="mobile-panel" aria-hidden="true" aria-label="Menú móvil">
+    <nav aria-label="Navegación móvil">
+      <ul class="mobile-nav-list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#visita">Visítenos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-ctas">
+      <a class="btn btn-whatsapp btn-block" href="https://wa.me/50685660110" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-outline btn-block" href="tel:+50624721752">Llamar al 2472-1752</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ============================= HERO ============================= -->
+    <section class="hero" id="inicio">
+      <div class="hero-decor" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Venecia de San Carlos</p>
+          <h1 class="hero-title">
+            <span class="hero-kicker">Distribuidora</span>
+            <span class="hero-brand"><span class="hero-word navy">El</span> <span class="hero-word orange">Dorado</span></span>
+          </h1>
+          <p class="hero-lead">Alimento, accesorios y pagos en un mismo lugar.</p>
+          <p class="hero-support">Todo para su mascota, y también sus pagos del día a día. Pase por Distribuidora El Dorado o escríbanos, con gusto le atendemos.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#contacto">Consulte nuestro catálogo</a>
+            <a class="btn btn-outline btn-lg" href="#contacto">Contáctenos</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img src="assets/mascota-portada.png" alt="" width="520" height="520" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= STATS BAND ============================= -->
+    <section class="stats-band" aria-label="En resumen">
+      <div class="container stats-inner">
+        <div class="stat">
+          <span class="stat-num">20 años</span>
+          <span class="stat-label">Atendiendo la zona</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">4,5</span>
+          <span class="stat-label">en Google (29 opiniones)</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">Venecia</span>
+          <span class="stat-label">de San Carlos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= NOSOTROS ============================= -->
+    <section class="section" id="nosotros">
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow">Quiénes somos</p>
+          <h2 class="section-title">Su distribuidora de confianza en Venecia</h2>
+          <p class="section-lead">Somos un negocio cercano, de barrio, donde encuentra lo que su mascota necesita y también resuelve sus pagos del día a día. Con gusto le atendemos.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-highlight">
+            <img class="about-mark" src="assets/mascota.jpg" alt="Mascota de Distribuidora El Dorado" width="120" height="120" />
+            <div class="about-badge">
+              <span class="about-badge-num">20 años</span>
+              <span class="about-badge-text">atendiendo la zona</span>
+            </div>
+          </div>
+          <figure class="about-photo">
+            <img src="assets/local.jpg" alt="Fachada de Distribuidora El Dorado en Venecia de San Carlos" loading="lazy" width="720" height="480" />
+          </figure>
+        </div>
+
+        <div class="cards cards-3 values">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-6.7-4.35-9.33-8.02C.9 10.4 1.44 7.3 3.76 6.1c1.9-.98 4.2-.26 5.3 1.5L12 10.8l2.94-3.2c1.1-1.76 3.4-2.48 5.3-1.5 2.32 1.2 2.86 4.3 1.09 6.88C18.7 16.65 12 21 12 21z"/></svg>
+            </div>
+            <h3 class="card-title">Atención cercana de barrio</h3>
+            <p class="card-text">Le atendemos con confianza y pregúntenos lo que necesite; aquí le ayudamos como vecino.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 7h16v3H4zM4 12h16v8H4zM9 3h6v2H9z"/></svg>
+            </div>
+            <h3 class="card-title">Todo en un mismo lugar</h3>
+            <p class="card-text">Alimento, accesorios y pagos, sin dar vueltas. Lo resuelve todo en una sola visita.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.3L12 14.9 7.2 16.6l.9-5.3L4.2 7.7l5.4-.8z"/></svg>
+            </div>
+            <h3 class="card-title">20 años atendiendo la zona</h3>
+            <p class="card-text">Dos décadas acompañando a las familias de Venecia y sus alrededores.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= SERVICIOS ============================= -->
+    <section class="section section-tint" id="servicios">
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow">Lo que hacemos</p>
+          <h2 class="section-title huge"><span class="navy">Nuestros</span> <span class="orange">SERVICIOS</span></h2>
+          <p class="section-lead">Dos líneas pensadas para resolverle el día: lo de su mascota y lo de sus pagos.</p>
+        </div>
+
+        <div class="servicios-grid">
+          <div class="orbital" aria-hidden="true">
+            <span class="orbit orbit-1"></span>
+            <span class="orbit orbit-2"></span>
+            <span class="orbit-dot dot-1"></span>
+            <span class="orbit-dot dot-2"></span>
+            <span class="orbit-dot dot-3"></span>
+            <img class="orbital-mark" src="assets/mascota.jpg" alt="" width="180" height="180" />
+          </div>
+
+          <div class="servicios-cards">
+            <article class="service-card">
+              <h3 class="service-title">Alimentos y accesorios para mascotas</h3>
+              <p class="service-text">Alimento para perros y gatos, además de los accesorios que su mascota necesita. Si busca algo en particular, pregúntenos con confianza.</p>
+              <a class="link-arrow" href="#contacto">Consulte nuestro catálogo <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="service-card">
+              <h3 class="service-title">Pago de servicios</h3>
+              <p class="service-text">Haga sus pagos sin dar vueltas. En un mismo lugar le ayudamos con sus recibos y trámites del mes.</p>
+              <ul class="service-list">
+                <li>Pago de luz</li>
+                <li>Pago de agua</li>
+                <li>Pago de teléfono</li>
+                <li>Pago de préstamos</li>
+                <li>Remesas</li>
+                <li>Recargas</li>
+                <li>Pagos y transferencias</li>
+              </ul>
+              <a class="link-arrow" href="#contacto">Escríbanos para más detalles <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+        </div>
+
+        <!-- Coming soon placeholder (clearly marked, no fake products) -->
+        <div class="catalog-strip">
+          <div class="catalog-copy">
+            <span class="pill pill-soon">Próximamente</span>
+            <p>Catálogo de artículos — lo estamos armando. Mientras tanto, consúltenos.</p>
+          </div>
+          <a class="btn btn-primary" href="#contacto">Consulte nuestro catálogo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= VISÍTENOS ============================= -->
+    <section class="visit" id="visita" aria-labelledby="visit-title">
+      <div class="visit-grid">
+        <div class="visit-info">
+          <p class="visit-eyebrow"><span class="visit-eyebrow-line" aria-hidden="true"></span>Venga a visitarnos</p>
+          <h2 id="visit-title" class="visit-title">Estamos en el corazón de Venecia</h2>
+          <p class="visit-lead">Pase a saludarnos y vea con calma lo que tenemos para usted y su mascota.</p>
+
+          <ul class="visit-facts">
+            <li>
+              <span class="visit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+              </span>
+              <div>
+                <p class="visit-label">Dirección</p>
+                <p class="visit-value">50 metros sur de la Iglesia Católica<br />Venecia, San Carlos, Alajuela</p>
+              </div>
+            </li>
+            <li>
+              <span class="visit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.6l4 2.3-.75 1.3L11 13V6h2z"/></svg>
+              </span>
+              <div>
+                <p class="visit-label">Horario</p>
+                <p class="visit-value">Lunes a sábado<br />7:00 a. m. – 6:00 p. m.</p>
+              </div>
+            </li>
+            <li>
+              <span class="visit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 5h18v4H3zM3 11h18v8H3z"/></svg>
+              </span>
+              <div>
+                <p class="visit-label">Medios de pago</p>
+                <p class="visit-value">Efectivo · SINPE Móvil<br />Visa · Mastercard · Amex</p>
+              </div>
+            </li>
+          </ul>
+
+          <a class="btn btn-primary btn-lg visit-maps" href="https://www.google.com/maps/search/?api=1&query=Distribuidora+El+Dorado,+Venecia,+San+Carlos,+Alajuela" target="_blank" rel="noopener">Cómo llegar en Google Maps <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="visit-map">
+          <iframe
+            class="map-frame"
+            src="https://www.google.com/maps?q=Distribuidora+El+Dorado,+Venecia,+San+Carlos,+Alajuela&output=embed"
+            title="Ubicación de Distribuidora El Dorado en Venecia de San Carlos"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= MEDIOS DE PAGO ============================= -->
+    <section class="section payments" aria-label="Medios de pago">
+      <div class="container">
+        <div class="section-intro">
+          <h2 class="section-title small">Medios de pago</h2>
+        </div>
+        <ul class="pay-pills">
+          <li class="pay-pill">Efectivo</li>
+          <li class="pay-pill">SINPE Móvil</li>
+          <li class="pay-pill">Visa</li>
+          <li class="pay-pill">Mastercard</li>
+          <li class="pay-pill">Amex</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================= CONTACTO ============================= -->
+    <section class="section section-tint" id="contacto">
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow">Hablemos</p>
+          <h2 class="section-title">¿En qué le podemos ayudar?</h2>
+          <p class="section-lead">Escríbanos o pase por la distribuidora. Con gusto le atendemos.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-facts">
+            <ul class="fact-list">
+              <li>
+                <span class="fact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+                </span>
+                <span><strong>Dirección</strong><br />50 metros sur de la Iglesia Católica, Venecia, San Carlos, Alajuela</span>
+              </li>
+              <li>
+                <span class="fact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>
+                </span>
+                <span><strong>WhatsApp</strong><br /><a href="https://wa.me/50685660110" target="_blank" rel="noopener">8566-0110</a></span>
+              </li>
+              <li>
+                <span class="fact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5z"/></svg>
+                </span>
+                <span><strong>Correo</strong><br /><a href="mailto:eldoradovenecia@gmail.com">eldoradovenecia@gmail.com</a></span>
+              </li>
+              <li>
+                <span class="fact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2a1 1 0 011.05-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.24 1.05z"/></svg>
+                </span>
+                <span><strong>Teléfono fijo</strong><br /><a href="tel:+50624721752">2472-1752</a></span>
+              </li>
+              <li>
+                <span class="fact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.6l4 2.3-.75 1.3L11 13V6h2z"/></svg>
+                </span>
+                <span><strong>Horario</strong><br />Lunes a sábado, 7:00 a. m. – 6:00 p. m.</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="nombre">Su nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Su nombre" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué le podemos ayudar?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-whatsapp btn-block btn-lg">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor"/></svg>
+              Enviar por WhatsApp
+            </button>
+            <p class="form-note">Al enviar se abre WhatsApp con su mensaje listo para mandar.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <a class="brand brand-light" href="#inicio">
+          <img class="brand-mark" src="assets/mascota.jpg" alt="Mascota de Distribuidora El Dorado" width="40" height="40" />
+          <span class="brand-name">Distribuidora <strong>El Dorado</strong></span>
+        </a>
+        <p class="footer-tagline">Todo para su mascota, y también sus pagos.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#visita">Visítenos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Contacto</h4>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/50685660110" target="_blank" rel="noopener">WhatsApp 8566-0110</a></li>
+          <li><a href="tel:+50624721752">Teléfono 2472-1752</a></li>
+          <li><a href="mailto:eldoradovenecia@gmail.com">eldoradovenecia@gmail.com</a></li>
+          <li>Venecia de San Carlos</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Distribuidora El Dorado · Venecia de San Carlos</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating actions -->
+  <a class="float-whatsapp" href="https://wa.me/50685660110" target="_blank" rel="noopener" aria-label="Escríbanos por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5l-7 7h4v7h6v-7h4z"/></svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
